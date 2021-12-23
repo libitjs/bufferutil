@@ -23,7 +23,7 @@
     "prettier:fix": "npm run prettier:cli -- --write",
     "format": "npm run prettier:fix",
     "clean": "lb-clean dist coverage .nyc_output *.tsbuildinfo",
-    "pretest": "npm run clean && npm run format",
+    "pretest": "npm run clean && npm run build && npm run format",
     "test": "jest",
     "test:ci": "jest --config ./jest.config.js --collectCoverage --coverageDirectory=\"./coverage\" --reporters=default --reporters=jest-junit --watchAll=false",
     "posttest": "npm run lint"

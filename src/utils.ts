@@ -1,4 +1,4 @@
-import {EMPTY_BUFFER} from "./constants";
+import {EMPTY_BUFFER} from './constants';
 
 /**
  * Merges an array of buffers into a new buffer.
